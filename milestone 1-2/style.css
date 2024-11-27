@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.resume-container {
+  display: flex;
+  flex-wrap: wrap; 
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  background: #ffffff;
+  box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Left Side */
+.left-side {
+  background-color: #001427;
+  color: #ffffff;
+  flex: 1;
+  border-right: 11px solid #708d81;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  padding: 30px 20px;
+  text-align: center;
+  min-width: 280px;
+}
+
+.profile-img {
+  margin: 0 auto 20px auto;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: 5px solid #708d81;
+}
+
+.left-side h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #708d81;
+  padding-bottom: 5px;
+}
+
+.left-side p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.left-side a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.left-side .contact-sec i {
+  margin-right: 10px;
+}
+
+/* Right Side */
+.right-side {
+  flex: 2.5;
+  padding: 30px 20px;
+  min-width: 280px;
+}
+
+.my-name {
+  font-size: 3.0rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #001427;
+}
+
+.profession {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  color: #708d81;
+  margin-bottom: 30px;
+}
+
+.right-side h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  background-color: #708d81;
+  border-bottom: 2px solid #001427;
+  padding-bottom: 5px;
+  color: #001427;
+}
+
+.right-side p, .right-side li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center-align content */
+  }
+
+  .left-side, .right-side {
+    flex: 1;
+    width: 100%; /* Full width on smaller screens */
+    text-align: center;
+  }
+
+  .profile-img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .my-name {
+    font-size: 2rem;
+  }
+
+  .profession {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-container {
+    padding: 10px; /* Add padding for smaller devices */
+  }
+
+  .profile-img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .my-name {
+    font-size: 1.8rem;
+  }
+
+  .profession {
+    font-size: 0.9rem;
+  }
+
+  .right-side h2 {
+    font-size: 1.5rem;
+  }
+
+  .right-side p, .right-side li {
+    font-size: 0.9rem;
+  }
+
+  .left-side h2, .right-side h2 {
+    font-size: 1.5rem;
+  }
+}
