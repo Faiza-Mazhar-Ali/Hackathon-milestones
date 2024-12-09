@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, serif;
+    margin: 20px;
+    padding: 0;
+    background-color: white; 
+}
+
+.first-heading{
+    display: flex;
+   text-align: center;
+   justify-content: center;
+   font-size: 45px;
+}
+
+#resme-builder-form{
+    align-items: center;
+    margin: auto;
+    background-color: rgb(112, 133, 133);
+    border-radius: 8px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 750px;
+    color: rgb(255, 254, 254);
+    font-size: large;
+}
+
+.fieldset-sections{
+    border-radius: 5px;
+}
+
+.legend-box{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.placeholder-boxes{
+    width: 710px;
+    height: 45px; 
+    border-radius: 9px;
+    box-shadow:  0 4px 9px rgba(0, 0, 0, 0.5);
+}
+
+.label-text{
+    font-size: medium;
+    font-weight: 500;
+} 
+
+#subm-buttion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(112, 133, 133);
+    /* width: 710px; */
+    height: 45px;
+    margin-top: 40px;
+}
+
+ #subm-button:hover{
+   color: aqua;
+ }
